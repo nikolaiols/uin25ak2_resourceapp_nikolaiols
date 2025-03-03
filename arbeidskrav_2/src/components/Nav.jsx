@@ -1,8 +1,8 @@
 import React from 'react';
 
-import {Route, Routes, Link} from "react-router-dom"
+import {Link} from "react-router-dom"
 
-export default function Nav({ HtmlPage, CssPage, JavascriptPage, ReactPage, SanityPage }){
+export default function Nav(){
     return(
     
       <>
@@ -15,13 +15,6 @@ export default function Nav({ HtmlPage, CssPage, JavascriptPage, ReactPage, Sani
               <li><Link to="/sanity">SANITY & HEADLESS CMS</Link></li>
           </ul>
         </nav>
-        <Routes>
-          <Route path="/html" element={<HtmlPage />} />
-          <Route path="/css" element={<CssPage />} />
-          <Route path="/javascript" element={<JavascriptPage />} />
-          <Route path="/react" element={<ReactPage />} />
-          <Route path="/sanity" element={<SanityPage />} />
-        </Routes>
       </>
       
     );

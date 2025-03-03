@@ -1,29 +1,27 @@
 import { useState } from 'react'
 import './App.css'
 import React from 'react';
-import { BrowserRouter as Router } from "react-router-dom";
-import Nav from "./components/Nav";
-import SanityPage from "./components/SanityPage";
-import ReactPage from "./components/ReactPage"
-import JavascriptPage from "./components/Javascript"
-import CssPage from "./components/CssPage"
-import HtmlPage from "./components/HtmlPage"
+import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
+import "./components/Nav";
+import Resources from './components/Resources';
+import Layout from "./components/Layout"
+
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
-  
-  <Router>
-   <Nav  
-  HtmlPage={HtmlPage} 
-  CssPage={CssPage} 
-  JavascriptPage={JavascriptPage} 
-  ReactPage={ReactPage} 
-  SanityPage={SanityPage}
-/>
-</Router>
- 
+    <>
+    <Layout/>
+    <Router>
+    <Routes>
+    <Route path="/html" element={<Resources Category="html" />} />
+    <Route path="/css" element={<Resources Category="css" />} />
+    <Route path="/javascript" element={<Resources Category="javascript"/>} />
+    <Route path="/react" element={<Resources Category="react" />} />
+    <Route path="/sanity" element={<Resources Category="headless-cms"/>} />
+  </Routes>
+  </Router>
+  </>
   )
 }
 
