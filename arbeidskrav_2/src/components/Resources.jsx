@@ -1,12 +1,13 @@
-import React from "react"
 import { resources } from "../components/ressurser.js"
 
-export default function ResourceList({ category }){
-    const FilRes = resources.filter(resources => resources.category === category)
+export default function Resources( {Category} ){
 
-    return (
+    
+    return(
         <>
-       
+     {/*bruke filter for å skrive ut fra arrayen*/}
         </>
-    )
+    );
+
 }
+ 

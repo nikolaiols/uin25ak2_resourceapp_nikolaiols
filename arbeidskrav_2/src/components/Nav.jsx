@@ -6,7 +6,7 @@ export default function Nav(){
     return(
     
       <>
-        <nav>
+        
           <ul>
               <li><Link to="/html">HTML</Link></li>
               <li><Link to="/css">CSS</Link></li>
@@ -14,7 +14,7 @@ export default function Nav(){
               <li><Link to="/react">REACT</Link></li>
               <li><Link to="/sanity">SANITY & HEADLESS CMS</Link></li>
           </ul>
-        </nav>
+       
       </>
       
     );

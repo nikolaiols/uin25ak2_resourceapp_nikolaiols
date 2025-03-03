@@ -1,20 +1,21 @@
 
 import './App.css'
 import React from 'react';
-import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
-import "./components/Nav";
-import Resources from './components/Resources';
+import { BrowserRouter as Router } from 'react-router-dom';
+import { Route, Routes} from "react-router-dom";
 import Nav from './components/Nav';
-
+import Resources from './components/Resources';
+import Layout from "./components/Layout"
 
 
 function App() {
 
   return (
     <>
-    <Nav/>
     <Router>
-    <Routes>
+    <Layout/>
+  
+  <Routes>
     <Route path="/html" element={<Resources Category="html" />} />
     <Route path="/css" element={<Resources Category="css" />} />
     <Route path="/javascript" element={<Resources Category="javascript"/>} />
@@ -22,8 +23,10 @@ function App() {
     <Route path="/sanity" element={<Resources Category="headless-cms"/>} />
   </Routes>
   </Router>
+
+ 
   </>
-  )
+  );
 }
 
 export default App
