@@ -1,17 +1,18 @@
-import { useState } from 'react'
+
 import './App.css'
 import React from 'react';
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import "./components/Nav";
 import Resources from './components/Resources';
-import Layout from "./components/Layout"
+import Nav from './components/Nav';
+
 
 
 function App() {
 
   return (
     <>
-    <Layout/>
+    <Nav/>
     <Router>
     <Routes>
     <Route path="/html" element={<Resources Category="html" />} />
