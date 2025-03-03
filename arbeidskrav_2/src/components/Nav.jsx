@@ -22,7 +22,7 @@ export default function Nav({ HtmlPage, CssPage, JavascriptPage, ReactPage, Sani
           <Route path="/react" element={<ReactPage />} />
           <Route path="/sanity" element={<SanityPage />} />
         </Routes>
-        </>
+      </>
       
     );
 }
