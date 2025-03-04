@@ -3,13 +3,11 @@ import './App.css'
 import React from 'react';
 import { BrowserRouter as Router } from 'react-router-dom';
 import { Route, Routes} from "react-router-dom";
-import Nav from './components/Nav';
 import Resources from './components/Resources';
 import Layout from "./components/Layout"
 
 
 function App() {
-
   return (
     <>
     <Router>
