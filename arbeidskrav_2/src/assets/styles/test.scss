@@ -24,6 +24,7 @@ article {
   display: flex;
 }
 article {
+    justify-content: start;
   flex-direction: column;
   background-color: var(--white);
   justify-content: center;
@@ -48,6 +49,7 @@ li {
 }
 
 button {
+    border-radius: 0;
   display: inline-block;
   font-weight: 600;
   font-size: 1rem;
