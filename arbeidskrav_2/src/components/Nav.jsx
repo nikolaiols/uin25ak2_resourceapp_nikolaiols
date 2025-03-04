@@ -1,5 +1,5 @@
 import React from 'react';
-
+import "../assets/styles/Nav.scss"
 import {Link} from "react-router-dom"
 
 export default function Nav(){
@@ -8,11 +8,11 @@ export default function Nav(){
       <>
         
           <ul>
-              <li><Link to="/html">HTML</Link></li>
-              <li><Link to="/css">CSS</Link></li>
-              <li><Link to="/javascript">JAVASCRIPT</Link></li>
-              <li><Link to="/react">REACT</Link></li>
-              <li><Link to="/sanity">SANITY & HEADLESS CMS</Link></li>
+              <li className="navbar"><Link to="/html">HTML</Link></li>
+              <li className="navbar"><Link to="/css">CSS</Link></li>
+              <li className="navbar"><Link to="/javascript">JAVASCRIPT</Link></li>
+              <li className="navbar"><Link to="/react">REACT</Link></li>
+              <li className="navbar"><Link to="/sanity">SANITY & HEADLESS CMS</Link></li>
           </ul>
        
       </>

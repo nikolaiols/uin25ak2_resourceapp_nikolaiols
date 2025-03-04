@@ -1,0 +1,21 @@
+body,
+header,
+article {
+  box-sizing: border-box;
+}
+body {
+  background-color: var(--gray);
+}
+
+header,
+article {
+  margin: 0 auto;
+  max-width: 1000px;
+  display: flex;
+}
+article {
+  flex-direction: column;
+  background-color: var(--white);
+  justify-content: center;
+  padding: 3rem;
+}

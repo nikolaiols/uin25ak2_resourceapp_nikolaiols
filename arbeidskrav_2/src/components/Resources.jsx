@@ -10,10 +10,11 @@ export default function Resources( {Category} ){
      {/*bruke filter for å skrive ut fra arrayen*/}
      {console.log("jeg funker", Category)}
      {console.log(filtered)}
-    <h2>{Category}</h2>
+   
         
       {filtered.map(resource => (
         <article key={resource.category}>
+             <h2>{Category}</h2>
           <h3>{resource.title}</h3>
           <p>{resource.text}</p>
           <ul>
