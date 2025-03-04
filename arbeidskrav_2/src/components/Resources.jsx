@@ -7,8 +7,11 @@ export default function Resources( {Category} ){
         <>
      {/*bruke filter for å skrive ut fra arrayen*/}
      {console.log("jeg funker", Category)}
-        </>
-    );
+    <h2>{Category}</h2>
+   
+    </>
+
+);
 
 }
  
