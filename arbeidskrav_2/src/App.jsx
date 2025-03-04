@@ -16,11 +16,11 @@ function App() {
     <Layout/>
   
   <Routes>
-    <Route path="/html" element={<Resources Category="html" />} />
-    <Route path="/css" element={<Resources Category="css" />} />
-    <Route path="/javascript" element={<Resources Category="javascript"/>} />
-    <Route path="/react" element={<Resources Category="react" />} />
-    <Route path="/sanity" element={<Resources Category="headless-cms"/>} />
+    <Route path="/html" element={<Resources Category="HTML" />} />
+    <Route path="/css" element={<Resources Category="CSS" />} />
+    <Route path="/javascript" element={<Resources Category="JavaScript"/>} />
+    <Route path="/react" element={<Resources Category="React" />} />
+    <Route path="/sanity" element={<Resources Category="Sanity and headless CMS"/>} />
   </Routes>
   </Router>
 
