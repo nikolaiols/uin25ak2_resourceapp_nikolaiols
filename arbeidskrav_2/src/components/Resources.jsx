@@ -10,16 +10,16 @@ export default function Resources( {Category} ){
      {console.log("jeg funker", Category)}
     <h2>{Category}</h2>
       {resources.map(resource => (
-        <div key={resource.category}>
+        <article key={resource.category}>
           <h3>{resource.title}</h3>
           <p>{resource.text}</p>
           <ul>
             {resource.sources.map(source => 
-                <li key={1}>
+                <li key={source.title}>
                     <Link to={`${source.url}`}>{`${source.title}`}</Link>
                 </li>)}
           </ul>
-        </div>
+        </article>
       ))}
     </>
 
