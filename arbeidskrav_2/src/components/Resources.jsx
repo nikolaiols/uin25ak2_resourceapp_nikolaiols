@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { resources } from "../components/ressurser.js"
 
+
 export default function Resources( {Category} ){
     const filtered = resources.filter(
         resource => resource.category === Category

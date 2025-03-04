@@ -5,7 +5,7 @@ import { BrowserRouter as Router } from 'react-router-dom';
 import { Route, Routes} from "react-router-dom";
 import Resources from './components/Resources';
 import Layout from "./components/Layout"
-
+import "./assets/styles/test.scss"
 
 
 function App() {
