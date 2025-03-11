@@ -7,7 +7,9 @@
   --blue: #58699d;
   --gray: #e1e5ee;
   --white: #fff;
+  --black: #000;
 }
+
 body,
 header,
 article {
@@ -16,6 +18,7 @@ article {
 }
 body {
   background-color: var(--gray);
+  
 }
 
 header,
@@ -32,5 +35,6 @@ article {
   padding: 3rem;
   h2, p{
     margin: 0;
+    color: var(--black);
   }
 }
