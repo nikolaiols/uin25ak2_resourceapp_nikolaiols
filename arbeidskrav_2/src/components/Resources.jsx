@@ -8,7 +8,6 @@ export default function Resources( {Category} ){
       );
     return(
         <>
-     {/*bruke filter for å skrive ut fra arrayen*/}
      {console.log("jeg funker", Category)}
      {console.log(filtered)}
    
