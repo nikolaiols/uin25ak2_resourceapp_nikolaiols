@@ -13,6 +13,7 @@ nav {
     list-style: none;
     a {
       color: #58699d;
+      text-decoration: underline;
     }
   }
   
@@ -28,6 +29,7 @@ nav {
     border-bottom: 4px solid var(--darkblue);
     a{
         color: var(--white);
+        text-decoration: none;
     }
   }
   button:hover {

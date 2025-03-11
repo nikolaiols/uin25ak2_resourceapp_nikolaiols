@@ -30,4 +30,7 @@ article {
   background-color: var(--white);
   justify-content: center;
   padding: 3rem;
+  h2, p{
+    margin: 0;
+  }
 }
