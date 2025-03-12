@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { resources } from "../components/ressurser.js"
+import PageTitle from "./PageTitle.jsx";
 
 
 export default function Resources( {Category} ){
@@ -9,7 +10,7 @@ export default function Resources( {Category} ){
       return (
         <article>
           <header>
-            <h2>{Category}</h2>
+            <PageTitle Category={Category}/>
           </header>
           <section>
             <ul>
