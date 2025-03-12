@@ -6,28 +6,22 @@ export default function Resources( {Category} ){
     const filtered = resources.filter(
         resource => resource.category === Category
       );
-    return(
-        <>
-     {console.log("jeg funker", Category)}
-     {console.log(filtered)}
-   
-        
-      {filtered.map(resource => (
-        <article key={resource.category}>
-             <h2>{Category}</h2>
-          <h3>{resource.title}</h3>
-          <p>{resource.text}</p>
-          <ul>
-            {resource.sources.map(source => 
-                <li key={source.title}>
-                    <Link to={`${source.url}`}>{`${source.title}`}</Link>
-                </li>)}
-          </ul>
+      return (
+        <article>
+          <header>
+            <h2>{Category}</h2>
+          </header>
+          <section>
+            <ul>
+              {filtered.map((resource, index) => (
+                <li key={index}>
+                  <Link to={resource.url}>{resource.title}</Link>
+                </li>
+              ))}
+            </ul>
+          </section>
         </article>
-      ))}
-    </>
-
-);
+      );
 
 }
  
