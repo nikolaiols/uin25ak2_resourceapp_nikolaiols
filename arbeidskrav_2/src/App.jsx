@@ -15,6 +15,7 @@ function App() {
     <Layout/>
   
   <Routes>
+    <Route index element={<Resources Category="html" />} />
     <Route path="/html" element={<Resources Category="html" />} />
     <Route path="/css" element={<Resources Category="css" />} />
     <Route path="/javascript" element={<Resources Category="javascript"/>} />
@@ -22,8 +23,6 @@ function App() {
     <Route path="/sanity" element={<Resources Category="headless-cms"/>} />
   </Routes>
   </Router>
-
- 
   </>
   );
 }
